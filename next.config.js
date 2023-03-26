@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
+  env: {
+    SHORTER_BASE_PATH: "https://google.com"
+  }
 }
 
 module.exports = nextConfig
