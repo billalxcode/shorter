@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Header from "@/components/header"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
@@ -50,6 +51,12 @@ export default function Home() {
 
   return (
     <div className="lg:max-w-screen-md m-auto h-screen relative">
+      <Head>
+        <title>URL Shoter</title>
+        <meta property="og.title" content="URL Shoter" key="title" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+      </Head>
       <Header></Header>
 
       <div className="relative flex flex-col">
